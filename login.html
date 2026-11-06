@@ -1,84 +1,44 @@
-<div class="login-card">
-  <h2>Welcome Back</h2>
-  <p class="subtitle">Login to continue to your account</p>
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>loginpage</title>
+  </head>
 
-  <div class="social-row">
-    <button class="social google">
-      <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20">
-      Continue with Google
-    </button>
-    <button class="social apple">
-      <svg viewBox="0 0 384 512" width="16" fill="white"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C59.3 141.2 0 184.8 0 241.2c0 26.2 10.5 54.1 32.8 89.2 22.2 35 40.8 73.8 70.2 72.2 27-1.4 37.4-17.3 78.7-17.3 40.6 0 48.4 17.3 76.2 16.9 28.7-.4 47-26.4 64.4-61.3 18.2-27.3 25.8-54.6 26.2-55.9-1.4-.9-50.1-19.2-50.8-76.2zM187.2 94c17.8-22 28.4-52.3 25.3-82.3-24.6 1-54.4 16.5-71.9 36.7-16 19.1-29.2 49.1-25.6 78 27.1 2.1 54.8-13.7 72.2-32.4z"/></svg>
-      Continue with Apple
-    </button>
-  </div>
+  <body>
+    <div class="login-card">
+      <h2>Welcome Back</h2>
+        <p class="subtitle">Login to continue to your account</p>
 
-  <div class="input-group">
-    <span class="icon">✉️</span>
-    <input type="email" placeholder="Email address">
-  </div>
+      <div class="social-row">
+        <button class="social google">
+         <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="20">
+         Continue with Google
+        </button>
+        <button class="social apple">
+          <svg viewBox="0 0 384 512" width="16" fill="white"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C59.3 141.2 0 184.8 0 241.2c0 26.2 10.5 54.1 32.8 89.2 22.2 35 40.8 73.8 70.2 72.2 27-1.4 37.4-17.3 78.7-17.3 40.6 0 48.4 17.3 76.2 16.9 28.7-.4 47-26.4 64.4-61.3 18.2-27.3 25.8-54.6 26.2-55.9-1.4-.9-50.1-19.2-50.8-76.2zM187.2 94c17.8-22 28.4-52.3 25.3-82.3-24.6 1-54.4 16.5-71.9 36.7-16 19.1-29.2 49.1-25.6 78 27.1 2.1 54.8-13.7 72.2-32.4z"/></svg>
+          Continue with Apple
+        </button>
+      </div>
 
-  <div class="input-group">
-    <span class="icon">🔒</span>
-    <input type="password" placeholder="Password" id="pass">
-    <span class="eye" onclick="pass.type = pass.type==='password'?'text':'password'">👁️</span>
-  </div>
+       <div class="input-group">
+         <span class="icon">✉️</span>
+         <input type="email" placeholder="Email address">
+       </div>
 
-  <div class="row">
-    <label><input type="checkbox"> Remember me</label>
-    <a href="#">Forgot Password?</a>
-  </div>
+       <div class="input-group">
+          <span class="icon">🔒</span>
+         <input type="password" placeholder="Password" id="pass">
+         <span class="eye" onclick="pass.type = pass.type==='password'?'text':'password'">👁️</span>
+       </div>
 
-  <button class="login-btn">Login</button>
+       <div class="row">
+         <label><input type="checkbox"> Remember me</label>
+         <a href="#">Forgot Password?</a>
+       </div>
 
-  <p class="bottom">Don't have an account? <a href="#">Sign up</a></p>
-</div>
+       <button class="login-btn">Login</button>
 
-<style>
-.login-card{
-  max-width:360px;margin:0 auto;
-  background:white;
-  padding:28px 20px;
-  border-radius:28px 28px 0 0;
-  font-family:Inter,sans-serif;
-}
-.login-card h2{text-align:center;color:#0A2A5A;font-size:26px;font-weight:700;}
-.subtitle{text-align:center;color:#555;font-size:13px;margin:6px 0 20px;}
-
-.social-row{display:flex;gap:10px;margin-bottom:20px;}
-.social{
-  flex:1;padding:10px;border-radius:10px;
-  border:1px solid #ddd;font-size:12px;font-weight:600;
-  display:flex;align-items:center;justify-content:center;gap:6px;
-  cursor:pointer;
-}
-.social.google{background:white;color:#333;}
-.social.apple{background:#111;color:white;border-color:#111;}
-
-.input-group{
-  display:flex;align-items:center;
-  border:1px solid #ddd;border-radius:12px;
-  padding:12px 14px;margin-bottom:14px;
-  gap:10px;
-}
-.input-group input{border:none;outline:none;flex:1;font-size:14px;}
-.icon{opacity:.7}
-.eye{cursor:pointer;opacity:.6}
-
-.row{
-  display:flex;justify-content:space-between;
-  align-items:center;font-size:12px;
-  margin:4px 0 18px;
-}
-.row a{color:#0A2A5A;text-decoration:none;font-weight:600;}
-
-.login-btn{
-  width:100%;padding:14px;
-  background:#0A2A5A;color:white;
-  border:none;border-radius:12px;
-  font-size:16px;font-weight:700;
-  cursor:pointer;
-}
-.bottom{text-align:center;font-size:12px;margin-top:16px;color:#555;}
-.bottom a{color:#0A2A5A;font-weight:700;text-decoration:none;margin-left:4px;}
-</style>
+      <p class="bottom">Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </body>
+</html>
